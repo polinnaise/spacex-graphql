@@ -36,7 +36,6 @@ p, img {
   height: 600px;
   float:right;
   border-radius: 100px;
-  margin-right: 100px;
   margin-top: 10%;
   box-shadow: -1px -1px 0px 3px rgba(212, 212, 212, 1),
   3px 3px 0px 1px rgba(255, 255, 255, 1);

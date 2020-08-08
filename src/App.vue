@@ -57,12 +57,12 @@ h1 {
   text-transform: uppercase;
 }
 .side {
-  width: 40%;
+  width: 30%;
   height: 100%;
   float: left;
 }
 .main {
-  width: 55%;
+  width: 50%;
   float: left;
 }
 </style>
