@@ -3,15 +3,15 @@
     <h1>
       <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
       >Launches</h1>
-    <LaunchList 
-      class="side" 
-      @select="selectLaunch" 
-    />
-    <LaunchDetails
-      class="main"
-      v-if="selectedLaunch"
-      :launches="selectedLaunch"
-    />
+      <LaunchList 
+        class="side" 
+        @select="selectLaunch" 
+      />
+      <LaunchDetails
+        class="main"
+        v-if="selectedLaunch"
+        :launches="selectedLaunch"
+      />
   </div>
 </template>
 

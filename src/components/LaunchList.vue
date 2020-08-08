@@ -1,20 +1,23 @@
 <template>
 <div>
-<ul class="timeline">
-  <li>
-      <li
-      v-for="launches in allRocket"
-      :key="launches.id"
-      @click="$emit('select', launches);"
-    >
-      {{ launches.mission_name }}
-    </li>
-</ul>
+  <Loader :loading="this.$apollo.loading" />
+  
+    <ul class="timeline">
+      <li>
+          <li
+          v-for="launches in allRocket"
+          :key="launches.id"
+          @click="$emit('select', launches);"
+        >
+          {{ launches.mission_name }}
+        </li>
+    </ul>
 </div>  
 </template>
 
 <script>
 import { gql } from "apollo-boost";
+import Loader from "./Loader.vue";
 export default {
   data() {
     return {
@@ -22,6 +25,7 @@ export default {
       launches:[]
     };
   },
+  components: { Loader },
   apollo: {
   allRocket: gql`query {
     allRocket: launches {
