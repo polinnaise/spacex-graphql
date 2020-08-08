@@ -30,6 +30,7 @@ p, img {
   text-align: justify;
   width:80%;
   margin-left: 10%;
+  border-radius: 15px;
 }
 .window_group {
   width: 500px;
